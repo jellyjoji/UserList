@@ -1,86 +1,137 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+    --white: #ffffff;
+    /*--gray50: #F9FAFB;*/
+    /*--gray100: #F3F4F6;*/
+    /*--gray300: #D1D5DB;*/
+    /*--gray500: #6B7280;*/
+    --gray1: #1F2937;
+    --gray2: #374151;
+    --gray3: #4B5563;
+    --gray4: #6B7280;
+    --gray5: #9CA3AF;
+    --gray6: #C8CED3;
+    --gray7: #F3F4F6;
+    --gray8: #f7f8fa;
+    --black: #030712;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+    --indigo50: #EEF2FF;
+    --red100: #FEE2E2;
+    --red300: #FCA5A5;
+    --red700: #B91C1C;
+    --blue100: #DBEAFE;
+    --blue300: #93C5FD;
+    --blue700: #1D4ED8;
+    --blue950: #2947a1;
+    --green100: #DCFCE7;
+    --green300: #86EFAC;
+    --green700: #15803D;
+    --purple100: #F3E8FF;
+    --purple300: #D8B4FE;
+    --purple700: #7E22CE;
+    --yellow100: #FEF9C3;
+    --yellow300: #FDE047;
+    --yellow700: #A16207;
 
-  --vt-c-indigo: #2c3e50;
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+    --color-primary: var(--blue700);
+    --color-secondary: var(--blue950);
+    --color-hover: var(--indigo50);
+    --color-background: var(--gray8);
+    --color-disabled: var(--gray5);
+    --color-error: var(--red700);
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+    --color-extract: var(--blue700);
+    --color-extract-sub: var(--blue100);
+    --color-extract-line: var(--blue300);
+    --color-send: var(--green700);
+    --color-send-sub: var(--green100);
+    --color-send-line: var(--green300);
+    --color-post: var(--purple700);
+    --color-post-sub: var(--purple100);
+    --color-post-line: var(--purple300);
+
+    --color-text: var(--black);
+    --color-border: var(--gray3);
+
+    --shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    --opacity: 0.6;
+
+    --transition: 0.2s;
+
+    --text-small: 0.7rem;
+    --text-medium: 1rem;
+    --text-mediumLarge: 1.5rem;
+    --text-large: 2rem;
+
+    --text-weight-xsmall: 300;
+    --text-weight-small: 400;
+    --text-weight-medium: 500;
+    --text-weight-large: 900;
+
+    --radius-small: 0.3rem;
+    --radius-medium: 0.6rem;
+    --radius-large: 2rem;
+
+    --padding-xsmall: 0.3rem;
+    --padding-small: 0.5rem;
+    --padding-medium: 1rem;
+    --padding-large: 1.5rem;
+    --padding-xlarge: 2rem;
+    --padding-xxlarge: 3rem;
+    --padding-xxxlarge: 4rem;
+
+    --width: 16.25rem;
 }
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+.darkMode {
+    --white: #030712;
+    --gray1: rgba(255, 255, 255, 0.7);
+    --gray2: rgba(255, 255, 255, 0.6);
+    --gray3: rgba(255, 255, 255, 0.5);
+    --gray4: rgba(255, 255, 255, 0.4);
+    --gray5: rgba(255, 255, 255, 0.3);
+    --gray6: rgba(255, 255, 255, 0.2);
+    --gray7: rgba(255, 255, 255, 0.1);
+    --gray8: rgba(255, 255, 255, 0.05);
+    --black: #ffffff;
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+    --indigo50: #EEF2FF;
+    --red100: #FEE2E2;
+    --red700: #B91C1C;
+    --blue100: #DBEAFE;
+    --blue700: #1D4ED8;
+    --blue950: #172554;
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
 
-  --section-gap: 160px;
+    --color-primary: var(--blue700);
+    --color-secondary: var(--blue950);
+    --color-hover: var(--indigo50);
+    --color-background: var(--gray8);
+    --color-disabled: var(--gray5);
+    --color-error: var(--red700);
+
+    --color-extract: var(--blue700);
+    --color-extract-sub: var(--blue100);
+    --color-extract-line: var(--blue300);
+    --color-send: var(--green700);
+    --color-send-sub: var(--green100);
+    --color-post: var(--purple700);
+    --color-post-sub: var(--purple100);
+
+    --color-text: var(--black);
+    --color-border: var(--gray3);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+/*@media (prefers-color-scheme: light) {*/
+/*    body {*/
+/*        color: var(--black);*/
+/*    }*/
+/*}*/
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
-}
-
-body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*!*dark 에서 root 만 변경하면 되지않나?*!*/
+/*@media (prefers-color-scheme: dark) {*/
+/*    body {*/
+/*        color: var(--white);*/
+/*    }*/
+/*}*/
