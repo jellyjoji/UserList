@@ -2,7 +2,7 @@
     font-family: Pretendard;
     color: var(--black);
     font-size: var(--text-medium);
-    font-weight: var(--text-weight-small);
+    font-weight: var(--text-weight-medium);
 }
 
 .containerMain {
@@ -20,8 +20,8 @@ img {
 
 
 .containers {
-    padding: var(--padding-small) var(--padding-large) ;
-    margin: 0;
+    padding: 0 2.5rem;
+    margin: 1.5rem 0;
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
@@ -127,6 +127,7 @@ header {
 
 .containerHeader {
     width: 100%;
+    /*opacity: 0.3;*/
 }
 
 .isTitle {
@@ -323,7 +324,7 @@ button:hover i {
     font-weight: var(--text-weight-medium);
 }
 
-.extract, .admin {
+.extract, .users {
     color: var(--color-extract);
     background-color: var(--color-extract-sub);
     /*border: 1px solid var(--color-extract-line);*/
@@ -335,13 +336,13 @@ button:hover i {
     border: 1px solid var(--color-send-line);
 }
 
-.post, .users {
+.post {
     color: var(--color-post);
     background-color: var(--color-post-sub);
     /*border: 1px solid var(--color-post-line);*/
 }
 
-.running, .success, .unBlocked {
+.running, .success, .unBlocked, .admin {
     color: var(--green700);
     background-color: var(--green100);
     /*border: 1px solid var(--green300);*/
@@ -374,19 +375,21 @@ table {
     background-color: var(--white);
     border-bottom: 1px solid var(--color-background);
     font-size: 14px ;
+    margin-top: 0.6rem;
 }
 
 .total {
     display: flex;
     align-items: center;
     gap: var(--padding-small);
-    padding-bottom: var(--padding-medium);
-    font-weight: 500;
+    line-height: 3rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 1.5rem;
 }
-
 .number {
     color: var(--blue700);
-    background-color: var(--blue100);
+    background-color: var(--color-extract-sub);
 }
 
 th {
@@ -395,16 +398,17 @@ th {
     border-top: 1px solid crimson;
     /*border-top: 1px solid var(--gray7);*/
     /*border-bottom: 1px solid var(--gray7);*/
-    line-height: var(--padding-medium);
+    line-height: 1.2rem;
     text-align: left;
     background-color: var(--gray8);
-    padding: var(--padding-small) 0;
+    padding: 12px 0;
 }
 
 
 td {
-    border-bottom: 1px solid var(--color-background);
-    line-height: var(--padding-xxxlarge);
+    border-bottom: 1px
+    solid var(--color-background);
+    line-height: 4.5rem;
 }
 
 td:nth-child(2) {

@@ -10,7 +10,7 @@
         <div class="isTitle">
           <div class="isAdd">
             <h1>User</h1>
-            <img src="../assets/Button.svg" alt="plus">
+            <img src="../assets/Button.svg" alt="plus" style="cursor: pointer; height: 2.5rem;">
           </div>
 
           <button  type="button" class="buttonStart" style="font-size: 15px;">
@@ -57,7 +57,7 @@
                 </th>
                 <th  scope="col">ID</th>
                 <th scope="col">Email</th>
-                <th scope="col">Groups</th>
+                <th scope="col">Group</th>
                 <th scope="col">Register</th>
                 <th scope="col">Status</th>
               </tr>
@@ -87,7 +87,7 @@
               </tr>
             </tbody>
           </table>
-          <div class="showOlder">
+          <div class="showOlder" style="font-size: 15px; font-weight: 500;">
             <img src="../assets/chevron-down.svg" alt="show older" style="width: 1.5rem ; height: 1.5rem;">
             Show Older</div>
         </div>
@@ -112,7 +112,7 @@ export default {
       userList:
           [
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -132,7 +132,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -152,7 +152,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -172,7 +172,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -192,7 +192,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -212,7 +212,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -232,7 +232,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -252,7 +252,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -272,7 +272,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -292,7 +292,7 @@ export default {
               }
             },
             {
-              "id": "userid1",
+              "id": "Userid1",
               "name": "Name1",
               "email": "user@gmail.com",
               "confirm": true,
@@ -394,7 +394,7 @@ tr {
 }
 
 th, td {
-  width: 8rem;
+  //width: 4rem;
   padding-left: 1rem;
   //border: 1px solid red;
   //background-color: pink;
@@ -402,13 +402,28 @@ th, td {
 
 th:first-child, td:first-child {
   color: var(--black);
-  width: 18rem;
+  width: 420px;
+  font-weight: 600;
+}
+th:nth-child(2), td:nth-child(2){
+  width: 200px;
+}
+th:nth-child(3), td:nth-child(3){
+  width: 200px;
 }
 
+th:nth-child(4), td:nth-child(4){
+  width: 180px;
+}
+th:nth-child(5), td:nth-child(5){
+  width: 200px;
+}
+th:nth-child(6), td:nth-child(6){
+  width: 60px;
+}
 #nav-user-tab {
   color: var(--color-primary);
   border-bottom: 0.2rem solid var(--color-primary);
-
 }
 #nav-invite-tab{
   color: var(--black);
@@ -416,12 +431,9 @@ th:first-child, td:first-child {
 
 table {
   color: var(--gray3);
+  //opacity: 0.3;
 }
-.total{
-  margin-left: 1rem;
-  //border: 1px solid crimson;
-  padding: 1rem 0;
-}
+
 .number{
   color: var(--color-primary);
   border-radius: 50px;
@@ -436,8 +448,8 @@ h1{
   text-align: center;
 }
 .breadcrumbs{
-  line-height: 3rem ;
-  color: var(--gray3);
+  line-height: 1rem ;
+  color: #6B7280;
 }
 .breadcrumbs span{
   color: var(--black);
@@ -446,22 +458,22 @@ h1{
 .blocked{
   color: var(--red700);
 }
-.unBlocked{
+.unBlocked, .admin{
   color: var(--green700);
 }
-.admin{
-  color: var(--color-primary);
-}
 .users{
-  color: var(--purple700);
+  color: var(--color-primary);
 }
 .optional{
   color: var(--gray3);
 }
 .badge{
+  font-size: 12px;
   font-weight: 500;
+  padding: var(--padding-xsmall);
 }
 .badges{
+  padding: var(--padding-small);
   border-radius: 100px;
   margin-right: 0.4rem;
   font-weight: 500;
@@ -470,7 +482,7 @@ h1{
   margin-right: 0.5rem;
 }
 .tabs{
-  padding: 0 0.8rem;
+  padding: 0 1rem;
   font-size: 14px;
 }
 </style>

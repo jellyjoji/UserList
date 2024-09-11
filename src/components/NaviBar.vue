@@ -13,7 +13,7 @@ export default {
     </div>
     <div class="profile">
      <div class="profileLeft">
-       <i class="bi bi-bell" style="font-size: 24px;"></i>
+       <i class="bi bi-bell" style="font-size: 24px; padding-left: 4px;"></i>
        <div class="badge number">2</div>
        Jihyun Jojina
      </div>
@@ -50,7 +50,7 @@ export default {
           </div>
           <div>
 <!--            <i class="bi bi-diagram-3"></i>-->
-            <img src="../assets/icons/permission.svg" alt="permission">
+            <img src="../assets/icons/pipeline.svg" alt="pipeline">
             Pipeline
           </div>
         </div>
@@ -87,15 +87,18 @@ export default {
         </div>
         <div class="subList">
           <div>
-            <i class="bi bi-gear"></i>
+<!--            <i class="bi bi-gear"></i>-->
+            <img src="../assets/icons/user.svg" alt="user">
             Server settings
           </div>
           <div>
-            <i class="bi bi-person-gear"></i>
+<!--            <i class="bi bi-person-gear"></i>-->
+            <img src="../assets/icons/group.svg" alt="group">
             User settings
           </div>
           <div>
-            <i class="bi bi-clock-history"></i>
+<!--            <i class="bi bi-clock-history"></i>-->
+            <img src="../assets/icons/permission.svg" alt="permission">
             Login history
           </div>
         </div>
@@ -118,9 +121,10 @@ export default {
 </template>
 
 <style scoped>
+
 nav{
-  width: 260px;
-  padding: var(--padding-medium);
+  width: 294px;
+  padding: 3px 20px 20px 28px;
   border: 1px solid var(--gray7);
   font-size: 14px;
   display: flex;
@@ -137,18 +141,19 @@ img{
   display: flex;
   //justify-content: space-around;
   align-items: center;
- height: 4rem;
+  height: 4rem;
 }
 h1{
   font-size: 26px;
   font-weight: 700;
+  height: 24px;
 }
 .profile{
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--gray7);
   border-bottom: 1px solid var(--gray7);
-  line-height: 3rem;
+  line-height: 3.5rem;
 }
 .category{
   display: flex;
@@ -156,12 +161,13 @@ h1{
   //border: 1px solid crimson;
 }
 .list{
-  line-height: 2.5rem;
+  line-height: 2.6rem;
   //border-left: var(--gray7);
 }
 .subTitle{
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .subList{
   padding-left: 1rem;
@@ -176,8 +182,8 @@ h1{
   font-weight: 300;
   border-radius: 50px;
   position: absolute;
-  left: 30px;
-  top: 90px;
+  left: 46px;
+  top: 82px;
 }
 
 .footerList{
@@ -189,4 +195,5 @@ small{
   color: var(--gray4);
   font-size: 14px;
 }
+
 </style>
